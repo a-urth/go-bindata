@@ -1,6 +1,6 @@
 ## bindata
 
-This package converts any file into managable Go source code. Useful for
+This package converts any file into manageable Go source code. Useful for
 embedding binary data into a go program. The file data is optionally gzip
 compressed before being converted to a raw byte slice.
 
@@ -154,7 +154,7 @@ The default behaviour of the program is to use compression.
 
 The keys used in the `_bindata` map, are the same as the input file name
 passed to `go-bindata`. This includes the path. In most cases, this is not
-desireable, as it puts potentially sensitive information in your code base.
+desirable, as it puts potentially sensitive information in your code base.
 For this purpose, the tool supplies another command line flag `-prefix`.
 This accepts a portion of a path name, which should be stripped off from
 the map keys and function names.
@@ -186,4 +186,3 @@ and must follow the build tags syntax specified by the go tool.
 
 [go-bindata-assetfs](https://github.com/elazarl/go-bindata-assetfs#readme) - 
 implements `http.FileSystem` interface. Allows you to serve assets with `net/http`.
-
